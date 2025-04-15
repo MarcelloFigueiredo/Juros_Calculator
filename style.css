@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500&display=swap');
+
+:root {
+    --primary: #34d399;  /* verde-menta */
+    --secondary: #0f766e; /* teal escuro */
+    --accent: #115e59;   /* verde petróleo */
+    --bg-dark: #1a1a1d;
+    --glass-bg: rgba(28, 35, 38, 0.6);
+    --text-light: #f1f5f9;
+    --text-muted: #94a3b8;
+    --gradient: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent));
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+body {
+    background: var(--gradient);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-light);
+}
+
+#calculator {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+#calculator h2 {
+    font-size: 28px;
+    font-weight: 500;
+    position: relative;
+    text-align: center;
+    color: var(--text-light);
+}
+
+#calculator h2::before {
+    content: '';
+    position: absolute;
+    width: 60%;
+    height: 3px;
+    background: var(--gradient);
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+}
+
+#input_box {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.input-field label {
+    font-size: 14px;
+    color: var(--text-muted);
+}
+
+.input-field input {
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid var(--accent);
+    color: var(--text-light);
+    font-size: 18px;
+    padding: 6px 4px;
+}
+
+.input-field input:focus {
+    outline: none;
+    border-bottom-color: var(--primary);
+}
+
+#result {
+    text-align: center;
+}
+
+#total {
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--primary);
+}
+
+#calculate {
+    background: var(--gradient);
+    border: none;
+    padding: 12px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#calculate:hover {
+    filter: brightness(1.1);
+}
