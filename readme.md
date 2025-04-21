@@ -12,5 +12,5 @@ Este é um projeto de uma  *Calculadora de Juros* com finalidade de informar o r
 
 ## 🌐 Acesse Aqui
 
-Você pode acessar  o Jogo da Velha através deste [link](https://marcellofigueiredo.github.io/Juros_Calculator/). Basta abrir no seu navegador e começar a usar!
+Você pode acessar a calculadora através deste [link](https://marcellofigueiredo.github.io/Juros_Calculator/). Basta abrir no seu navegador e começar a usar!
 
